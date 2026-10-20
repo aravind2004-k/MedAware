@@ -1,0 +1,565 @@
+@charset "UTF-8";
+
+/* General page styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fb;
+    color: #263445;
+}
+
+/* Main heading */
+h1 {
+    color: #087e8b;
+    margin-bottom: 15px;
+}
+
+h2, h3 {
+    color: #263445;
+    margin-bottom: 15px;
+}
+
+/* Main content */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
+}
+
+/* Welcome section */
+.welcome-card {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+}
+
+/* Search section */
+.search-card {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+}
+
+.search-card input {
+    width: 75%;
+    padding: 12px;
+    border: 1px solid #ccd6e0;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+button {
+    background-color: #087e8b;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #05636d;
+}
+
+/* Information cards */
+.info-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+}
+
+.info-card p {
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+/* Navigation links */
+.nav-links {
+    margin-bottom: 25px;
+}
+
+.nav-links a {
+    display: inline-block;
+    text-decoration: none;
+    color: #087e8b;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Search history table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+th, td {
+    padding: 14px;
+    border: 1px solid #dce3eb;
+    text-align: left;
+}
+
+th {
+    background-color: #087e8b;
+    color: white;
+}
+
+/* Footer */
+.footer {
+    margin-top: 30px;
+    padding: 15px;
+    text-align: center;
+    color: #667788;
+}
+
+/* Login page */
+
+.login-container {
+    width: 380px;
+    max-width: 90%;
+    margin: 80px auto;
+    padding: 35px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.10);
+}
+
+.login-container h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.login-container p {
+    text-align: center;
+    color: #667788;
+    margin-bottom: 25px;
+}
+
+.login-container label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 18px;
+    border: 1px solid #ccd6e0;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.login-container button {
+    width: 100%;
+    font-size: 16px;
+}
+
+.login-container a {
+    color: #087e8b;
+    text-decoration: none;
+}
+
+.login-container a:hover {
+    text-decoration: underline;
+}
+
+/* Registration page */
+
+.register-container {
+    width: 420px;
+    max-width: 90%;
+    margin: 60px auto;
+    padding: 35px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.10);
+}
+
+.register-container h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.register-container p {
+    text-align: center;
+    color: #667788;
+    margin-bottom: 25px;
+}
+
+.register-container label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+
+.register-container input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 18px;
+    border: 1px solid #ccd6e0;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.register-container button {
+    width: 100%;
+    font-size: 16px;
+}
+
+/* Search History Page */
+
+.history-container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.history-container h1 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.history-container h3 {
+    margin-bottom: 20px;
+    color: #087e8b;
+}
+
+/* History table */
+
+.history-container table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.history-container th {
+    background-color: #087e8b;
+    color: white;
+    padding: 15px;
+}
+
+.history-container td {
+    padding: 14px;
+    border-bottom: 1px solid #e5eaf0;
+}
+
+.history-container tr:nth-child(even) {
+    background-color: #f4f7fb;
+}
+
+.history-container tr:hover {
+    background-color: #e6f5f5;
+}
+
+/* Back button */
+
+.back-button {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 22px;
+    background-color: #087e8b;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.back-button:hover {
+    background-color: #05636d;
+}
+
+/* Main Dashboard Layout */
+
+.dashboard-layout {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Sidebar */
+
+.sidebar {
+    width: 250px;
+    min-width: 250px;
+    background-color: #123d50;
+    color: white;
+    padding: 25px 18px;
+}
+
+.sidebar h2 {
+    color: white;
+    margin-bottom: 35px;
+}
+
+.sidebar a {
+    display: block;
+    color: #e5f1f5;
+    text-decoration: none;
+    padding: 13px 15px;
+    margin-bottom: 8px;
+    border-radius: 7px;
+}
+
+.sidebar a:hover {
+    background-color: #087e8b;
+    color: white;
+}
+
+/* Main Dashboard Content */
+
+.main-content {
+    flex: 1;
+    min-width: 0;
+    padding: 30px;
+    background-color: #f4f7fb;
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+
+    .dashboard-layout {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .sidebar a {
+        display: inline-block;
+        margin-right: 5px;
+    }
+
+    .main-content {
+        padding: 18px;
+    }
+}
+
+/* Sidebar Navigation Improvements */
+
+.sidebar a {
+    transition: background-color 0.3s ease,
+                padding-left 0.3s ease;
+}
+
+.sidebar a:hover {
+    background-color: #087e8b;
+    padding-left: 22px;
+}
+
+/* Sidebar Heading */
+
+.sidebar h2 {
+    font-size: 25px;
+    letter-spacing: 1px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Improved Information Cards */
+
+.info-card {
+    border-left: 5px solid #087e8b;
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.info-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.10);
+}
+
+.info-card h4 {
+    color: #087e8b;
+    font-size: 19px;
+    margin-bottom: 12px;
+}
+
+.info-card p {
+    line-height: 1.7;
+    margin-top: 10px;
+}
+
+/* Search Section Improvements */
+
+.search-card {
+    border: 1px solid #e1eaf0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.search-card h3 {
+    color: #087e8b;
+    margin-bottom: 20px;
+}
+
+.search-card input {
+    transition: border-color 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.search-card input:focus {
+    outline: none;
+    border-color: #087e8b;
+    box-shadow: 0 0 0 3px rgba(8, 126, 139, 0.12);
+}
+
+.search-card button {
+    transition: background-color 0.3s ease,
+                transform 0.2s ease;
+}
+
+.search-card button:hover {
+    transform: translateY(-2px);
+}
+
+/* Dashboard Typography and Spacing */
+
+.main-content > h3 {
+    color: #123d50;
+    font-size: 21px;
+    margin-top: 25px;
+    margin-bottom: 18px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #dce9ed;
+}
+
+.welcome-card h1 {
+    font-size: 28px;
+}
+
+.welcome-card h2 {
+    color: #087e8b;
+    margin-top: 10px;
+}
+
+.welcome-card p {
+    margin-top: 12px;
+    color: #667788;
+}
+
+.main-content {
+    line-height: 1.6;
+}
+
+/* Medical Disclaimer Styling */
+
+.footer {
+    background-color: #e8f4f5;
+    border-left: 4px solid #087e8b;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 35px;
+    text-align: center;
+}
+
+.footer p {
+    color: #526875;
+    line-height: 1.7;
+    margin-bottom: 8px;
+}
+
+.footer small {
+    font-size: 13px;
+}
+
+/* Responsive Dashboard Design */
+
+/* Tablets */
+
+@media (max-width: 992px) {
+
+    .sidebar {
+        width: 210px;
+        min-width: 210px;
+    }
+
+    .main-content {
+        padding: 22px;
+    }
+
+}
+
+/* Mobile Phones */
+
+@media (max-width: 768px) {
+
+    .dashboard-layout {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        min-width: 0;
+        padding: 18px;
+    }
+
+    .sidebar h2 {
+        margin-bottom: 15px;
+    }
+
+    .sidebar a {
+        display: inline-block;
+        padding: 10px;
+        margin: 3px;
+        font-size: 14px;
+    }
+
+    .main-content {
+        width: 100%;
+        padding: 18px;
+    }
+
+    .search-card input {
+        width: 100%;
+        margin-bottom: 12px;
+    }
+
+    .search-card button {
+        width: 100%;
+    }
+
+    .welcome-card h1 {
+        font-size: 23px;
+    }
+
+}
+
+/* Very Small Screens */
+
+@media (max-width: 480px) {
+
+    .main-content {
+        padding: 12px;
+    }
+
+    .sidebar a {
+        font-size: 13px;
+        padding: 8px;
+    }
+
+    .info-card {
+        padding: 15px;
+    }
+
+}
