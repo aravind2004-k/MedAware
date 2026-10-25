@@ -1,6 +1,6 @@
 # MedAware – Health Condition and Medicine Information System
 
-MedAware is a Java-based web application that allows users to search for common health conditions and view related medicine information. It provides general information about medicine uses, precautions, side effects, warnings, and timing details through a simple user-friendly interface.
+MedAware is a Java-based web application that enables users to search for common health conditions and access related general medicine information, including uses, precautions, side effects, warnings, and timing instructions.
 
 **Disclaimer:** This application is developed for educational purposes only. It does not provide medical diagnosis or prescriptions. Always consult a qualified healthcare professional before taking medication.
 
